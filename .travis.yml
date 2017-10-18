@@ -6,5 +6,5 @@ services:
   - docker
 
 script:
-  - mvn clean install -Ddocker.useColor=false -Ddocker.showLogs -Pdocker -Pjacoco coveralls:report -Phw-staging --settings maven.settings.xml
+  - mvn clean install -Ddocker.useColor=false -Ddocker.showLogs -Pdocker -Pjacoco coveralls:report --settings maven.settings.xml
 
